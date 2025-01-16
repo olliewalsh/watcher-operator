@@ -12,7 +12,7 @@ env:
 
 jobs:
   call-build-workflow:
-    uses: openstack-k8s-operators/openstack-k8s-operators-ci/.github/workflows/reusable-build-operator.yaml@main
+    uses: olliewalsh/openstack-k8s-operators-ci/.github/workflows/reusable-build-operator.yaml@forkactions
     with:
       operator_name: watcher
       go_version: 1.21.x
