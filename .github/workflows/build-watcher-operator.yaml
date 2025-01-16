@@ -17,6 +17,7 @@ jobs:
       operator_name: watcher
       go_version: 1.21.x
       operator_sdk_version: 1.31.0
+    if: ${{ secrets.QUAY_PASSWORD }}
     secrets:
       IMAGENAMESPACE: ${{ secrets.IMAGENAMESPACE }}
       QUAY_USERNAME: ${{ secrets.QUAY_USERNAME }}
